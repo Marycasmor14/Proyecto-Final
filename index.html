@@ -3,211 +3,104 @@
 
 <head>
 
-    <!-- CONFIGURACION PRINCIPAL -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- TITULO -->
     <title>Inicio | AutoRep</title>
 
-    <!-- CSS PRINCIPAL -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/4b9b5f5a5a.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-    <!-- MENU DE NAVEGACION -->
-    <nav>
+<!-- NAV -->
+<nav class="nav">
 
-        <!-- LOGO -->
-        <div class="logo">
-
-            <img src="img/logo.png" alt="Logo AutoRep">
-
-        </div>
-
-        <!-- OPCIONES DEL MENU -->
-        <ul>
-
-            <li><a href="index.html">Inicio</a></li>
-
-            <li><a href="servicios.html">Servicios</a></li>
-
-            <li><a href="productos.html">Productos</a></li>
-
-            <li><a href="clientes.html">Clientes</a></li>
-
-            <li><a href="contacto.html">Contacto</a></li>
-
-            <li><a href="politicas.html">Políticas</a></li>
-
-        </ul>
-
-    </nav>
-
-    <!-- SECCION PRINCIPAL -->
-    <section class="hero">
-
-        <!-- IMAGEN PRINCIPAL -->
-        <img src="img/taller.png" alt="Taller Automotriz">
-
-        <!-- CONTENIDO SOBRE LA IMAGEN -->
-        <div class="hero-text">
-
-            <!-- TITULO -->
-            <h1>AutoRep</h1>
-
-            <!-- TEXTO -->
-            <p>
-
-                Refacciones, mantenimiento y servicios mecánicos profesionales.
-
-            </p>
-
-            <!-- BOTON -->
-            <a href="productos.html" class="btn">
-
-                Ver Productos
-
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- SECCION QUIENES SOMOS -->
-    <section class="quienes">
-
-        <!-- TITULO -->
-        <h2>¿Quiénes Somos?</h2>
-
-        <!-- TEXTO -->
-        <p>
-
-            AutoRep es una empresa dedicada a la venta de refacciones
-            automotrices y servicios mecánicos. Nuestro objetivo es brindar
-            seguridad, calidad y confianza a cada cliente mediante atención
-            profesional y productos de alta calidad.
-
-        </p>
-
-    </section>
-
-    <!-- SECCION CONTACTO -->
-    <section class="contacto">
-
-        <!-- TITULO -->
-        <h2>Contacto y Redes Sociales</h2>
-
-        <!-- TABLA -->
-        <table>
-
-            <!-- TELEFONO -->
-            <tr>
-
-                <td>
-
-                    <img src="icons/telefono.png" alt="Telefono" class="icono-contacto">
-
-                </td>
-
-                <td>
-
-                    Teléfono <br>
-
-                    <small>+442 8952924</small>
-
-                </td>
-
-            </tr>
-
-            <!-- CORREO -->
-            <tr>
-
-                <td>
-
-                    <img src="icons/email.png" alt="Correo" class="icono-contacto">
-
-                </td>
-
-                <td>
-
-                    Correo <br>
-
-                    <small>info@autorep.com</small>
-
-                </td>
-
-            </tr>
-
-            <!-- INSTAGRAM -->
-            <tr>
-
-                <td>
-
-                    <img src="icons/instagram.png" alt="Instagram" class="icono-contacto">
-
-                </td>
-
-                <td>
-
-                    Instagram <br>
-
-                    <small>@Autor_ep</small>
-
-                </td>
-
-            </tr>
-
-            <!-- WHATSAPP -->
-            <tr>
-
-                <td>
-
-                    <img src="icons/whatsapp.png" alt="Whatsapp" class="icono-contacto">
-
-                </td>
-
-                <td>
-
-                    Whatsapp <br>
-
-                    <small>+4428952924</small>
-
-                </td>
-
-            </tr>
-
-        </table>
-
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-
-        <!-- LOGO FOOTER -->
+    <div class="logo">
         <img src="img/logo.png" alt="Logo AutoRep">
+    </div>
 
-        <!-- TEXTO -->
-        <p>
+    <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="politicas.html">Políticas</a></li>
+    </ul>
 
-            © 2026 AutoRep - Todos los derechos reservados
+    <!-- BUSCADOR -->
+    <div class="search">
+        <input type="text" placeholder="Buscar...">
+        <button><i class="fas fa-search"></i></button>
+    </div>
 
-        </p>
+</nav>
 
-    </footer>
+<!-- HERO -->
+<section class="hero">
 
-    <!-- JAVASCRIPT -->
-    <script src="js/script.js"></script>
+    <img src="img/taller.png" alt="Taller Automotriz">
+
+    <div class="hero-text">
+        <h1>AutoRep</h1>
+        <p>Refacciones, mantenimiento y servicios mecánicos profesionales.</p>
+        <a href="productos.html" class="btn">Ver Productos</a>
+    </div>
+
+</section>
+
+<!-- QUIENES SOMOS -->
+<section class="quienes">
+    <h2>¿Quiénes Somos?</h2>
+    <p>
+        AutoRep es una empresa dedicada a la venta de refacciones automotrices y servicios mecánicos.
+    </p>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto">
+    <h2>Contacto y Redes Sociales</h2>
+
+    <table>
+        <tr>
+            <td><img src="icons/telefono.png" class="icono"></td>
+            <td>Teléfono <br><small>+442 8952924</small></td>
+        </tr>
+
+        <tr>
+            <td><img src="icons/email.png" class="icono"></td>
+            <td>Correo <br><small>info@autorep.com</small></td>
+        </tr>
+
+        <tr>
+            <td><img src="icons/instagram.png" class="icono"></td>
+            <td>Instagram <br><small>@Autor_ep</small></td>
+        </tr>
+
+        <tr>
+            <td><img src="icons/whatsapp.png" class="icono"></td>
+            <td>Whatsapp <br><small>+4428952924</small></td>
+        </tr>
+    </table>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <img src="img/logo.png">
+    <p>© 2026 AutoRep - Todos los derechos reservados</p>
+</footer>
+
+<script src="js/script.js"></script>
 
 </body>
-
 </html>

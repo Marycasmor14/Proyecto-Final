@@ -1,19 +1,7 @@
-// =================================
-// MENSAJE DE BIENVENIDA
-// =================================
-
-console.log("Proyecto AutoRep funcionando correctamente");
-
-
-
-// =================================
-// EFECTO AL DAR CLICK EN BOTON
-// =================================
-
-const boton=document.querySelector(".btn");
-
-boton.addEventListener("click",()=>{
-
-    alert("Bienvenido a la sección de productos");
-
+// efecto simple al cargar página
+window.addEventListener("load", () => {
+    document.body.style.opacity = "1";
 });
+
+// puedes agregar aquí animaciones después
+console.log("AutoRep cargado correctamente");
