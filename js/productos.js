@@ -21,22 +21,22 @@ const productos = [
     {nombre:"Suspensión", precio:1600, img:"img/p18.png", desc:"Estabilidad"},
     {nombre:"Escape", precio:2000, img:"img/p19.png", desc:"Salida de gases"},
     {nombre:"Sensor O2", precio:850, img:"img/p20.png", desc:"Control de emisiones"}
-];
 
+];
 
 const contenedor = document.getElementById("contenedor-productos");
 
 if(!contenedor){
-    console.error("NO existe el contenedor-productos");
+    console.log("NO existe contenedor");
     return;
 }
 
-productos.forEach((p, i) => {
+productos.forEach((p,i)=>{
     contenedor.innerHTML += `
         <div class="producto" onclick="abrirModal(${i})">
             <img src="${p.img}">
             <h3>${p.nombre}</h3>
-            <p>$${p.precio} MXN</p>
+            <p>$${p.precio}</p>
         </div>
     `;
 });
@@ -45,7 +45,7 @@ window.abrirModal = function(i){
     document.getElementById("modal").style.display = "flex";
     document.getElementById("modal-img").src = productos[i].img;
     document.getElementById("modal-nombre").innerText = productos[i].nombre;
-    document.getElementById("modal-precio").innerText = "$" + productos[i].precio + " MXN";
+    document.getElementById("modal-precio").innerText = "$"+productos[i].precio;
     document.getElementById("modal-descripcion").innerText = productos[i].desc;
 }
 

@@ -1,39 +1,3 @@
-body{
-    font-family: Arial;
-    margin: 0;
-    background: #fff;
-}
-
-/* NAV */
-.nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    background: #111;
-}
-
-.menu{
-    display: flex;
-    list-style: none;
-    gap: 15px;
-}
-
-.menu a{
-    color: white;
-    text-decoration: none;
-}
-
-/* TITULO */
-.productos{
-    text-align: center;
-    padding: 30px;
-}
-
-h2{
-    color: red;
-}
-
-/* GRID PRODUCTOS */
 #contenedor-productos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -41,12 +5,13 @@ h2{
     padding: 20px;
 }
 
-/* TARJETA */
 .producto{
-    border: 1px solid #ddd;
+    background: #111;
+    color: white;
     padding: 10px;
-    cursor: pointer;
     text-align: center;
+    cursor: pointer;
+    border: 1px solid red;
 }
 
 .producto img{
@@ -63,20 +28,22 @@ h2{
     left:0;
     width:100%;
     height:100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.8);
     justify-content:center;
     align-items:center;
 }
 
 .modal-contenido{
-    background: white;
+    background: #111;
     padding: 20px;
     width: 300px;
+    color: white;
     text-align: center;
 }
 
 .cerrar{
     float: right;
-    font-size: 20px;
     cursor: pointer;
+    color: red;
+    font-size: 22px;
 }
