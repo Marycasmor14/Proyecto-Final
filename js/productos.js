@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", () => {
+
 const productos = [
     {nombre:"Aceite Motor", precio:250, img:"img/acemotor.png", desc:"Lubricante para motor"},
     {nombre:"Filtro Aire", precio:180, img:"img/aire.png", desc:"Filtra impurezas del aire"},
@@ -21,7 +23,13 @@ const productos = [
     {nombre:"Sensor O2", precio:850, img:"img/p20.png", desc:"Control de emisiones"}
 ];
 
+
 const contenedor = document.getElementById("contenedor-productos");
+
+if(!contenedor){
+    console.error("NO existe el contenedor-productos");
+    return;
+}
 
 productos.forEach((p, i) => {
     contenedor.innerHTML += `
@@ -33,8 +41,7 @@ productos.forEach((p, i) => {
     `;
 });
 
-// ABRIR MODAL
-function abrirModal(i){
+window.abrirModal = function(i){
     document.getElementById("modal").style.display = "flex";
     document.getElementById("modal-img").src = productos[i].img;
     document.getElementById("modal-nombre").innerText = productos[i].nombre;
@@ -42,14 +49,8 @@ function abrirModal(i){
     document.getElementById("modal-descripcion").innerText = productos[i].desc;
 }
 
-// CERRAR MODAL
-function cerrarModal(){
+window.cerrarModal = function(){
     document.getElementById("modal").style.display = "none";
 }
 
-// cerrar si da clic fuera del cuadro
-window.onclick = function(e){
-    if(e.target.id === "modal"){
-        cerrarModal();
-    }
-}
+});
