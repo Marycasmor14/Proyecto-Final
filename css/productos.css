@@ -43,3 +43,36 @@ body{
     padding: 20px;
     width: 300px;
 }
+/* NAV  */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: black;
+    border-bottom: 2px solid red;
+}
+
+.logo img{
+    width: 120px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.menu li a:hover{
+    background: red;
+    color: white;
+}
