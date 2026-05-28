@@ -9,7 +9,8 @@
 }
 
 
-/* CUERPO */
+
+/* CUERPO PAGINA */
 
 body{
     font-family:'Barlow',sans-serif;
@@ -32,11 +33,13 @@ nav{
 }
 
 
+
 /* LOGO */
 
 .logo img{
     width:120px;
 }
+
 
 
 /* OPCIONES MENU */
@@ -46,6 +49,7 @@ nav ul{
     list-style:none;
     gap:30px;
 }
+
 
 
 /* LINKS */
@@ -58,7 +62,8 @@ nav ul li a{
 }
 
 
-/* EFECTO */
+
+/* EFECTO MENU */
 
 nav ul li a:hover{
     color:red;
@@ -67,13 +72,14 @@ nav ul li a:hover{
 
 
 /* ================================= */
-/* INICIO */
+/* SECCION INICIO */
 /* ================================= */
 
 #inicio{
     text-align:center;
     padding:50px 20px;
 }
+
 
 
 /* IMAGEN PRINCIPAL */
@@ -86,11 +92,13 @@ nav ul li a:hover{
 }
 
 
-/* TEXTO */
+
+/* CONTENIDO */
 
 .hero-content{
     margin-top:30px;
 }
+
 
 
 /* TITULO */
@@ -102,7 +110,8 @@ nav ul li a:hover{
 }
 
 
-/* PARRAFO */
+
+/* TEXTO */
 
 .hero-content p{
     font-size:20px;
@@ -124,7 +133,8 @@ nav ul li a:hover{
 }
 
 
-/* HOVER BOTON */
+
+/* EFECTO BOTON */
 
 .btn:hover{
     background:white;
@@ -143,7 +153,8 @@ nav ul li a:hover{
 }
 
 
-/* TITULO */
+
+/* TITULO CONTACTO */
 
 #info-contacto h2{
     font-size:45px;
@@ -162,11 +173,15 @@ nav ul li a:hover{
 }
 
 
-/* ICONOS */
+
+/* ICONOS CONTACTO */
 
 .contact-icon-img{
-    width:40px;
+    width:35px;
+    height:35px;
+    object-fit:contain;
 }
+
 
 
 /* TEXTO TABLA */
@@ -190,16 +205,17 @@ footer{
 }
 
 
+
 /* LOGO FOOTER */
 
-footer img{
+footer > img{
     width:100px;
     margin-bottom:20px;
 }
 
 
 
-/* REDES */
+/* REDES SOCIALES */
 
 .social-links{
     display:flex;
@@ -209,15 +225,19 @@ footer img{
 }
 
 
+
 /* ICONOS REDES */
 
 .social-icon img{
     width:40px;
+    height:40px;
+    object-fit:contain;
     transition:.3s;
 }
 
 
-/* EFECTO */
+
+/* EFECTO ICONOS */
 
 .social-icon img:hover{
     transform:scale(1.2);
