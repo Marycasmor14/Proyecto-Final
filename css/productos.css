@@ -1,55 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🌑 FONDO GENERAL */
 body{
-    font-family: Arial;
-    background: black;
+    background: #000;
     color: white;
-    text-align: center;
 }
 
-#contenedor-productos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-    padding: 20px;
-}
-
-.producto{
-    background: #111;
-    border: 1px solid red;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.producto img{
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-}
-
-/* MODAL */
-.modal{
-    display: none;
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background: rgba(0,0,0,0.8);
-    justify-content:center;
-    align-items:center;
-}
-
-.modal-contenido{
-    background: #111;
-    padding: 20px;
-    width: 300px;
-}
-/* NAV  */
+/* ================= NAV ================= */
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: black;
+    background: #000;
     border-bottom: 2px solid red;
 }
 
@@ -68,11 +36,87 @@ body{
     color: white;
     font-weight: bold;
     padding: 8px 12px;
-    transition: 0.3s;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 .menu li a:hover{
     background: red;
     color: white;
+}
+
+/* ================= TITULO ================= */
+h2{
+    text-align: center;
+    color: red;
+    margin: 20px 0;
+}
+
+/* ================= PRODUCTOS ================= */
+#contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+/* TARJETA PRODUCTO */
+.producto{
+    background: #111;
+    border: 1px solid red;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.producto:hover{
+    transform: scale(1.05);
+}
+
+.producto img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* ================= MODAL ================= */
+.modal{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.8);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-contenido{
+    background: #111;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal-contenido img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cerrar{
+    float: right;
+    cursor: pointer;
+    color: red;
+    font-size: 22px;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid red;
 }
