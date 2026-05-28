@@ -330,3 +330,204 @@ footer p{
     }
 
 }
+/* ================================= */
+/* PAGINAS INTERNAS */
+/* ================================= */
+
+.page-title{
+    text-align:center;
+    font-size:70px;
+    margin-top:50px;
+    margin-bottom:50px;
+    color:#e8190a;
+    font-family:'Bebas Neue',sans-serif;
+}
+
+
+
+/* CONTENEDOR GENERAL */
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+
+
+/* TARJETAS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-bottom:60px;
+}
+
+
+
+/* CARD */
+
+.card{
+    background:#1b1b1b;
+    border-radius:10px;
+    overflow:hidden;
+    transition:.3s;
+    text-align:center;
+    padding-bottom:20px;
+}
+
+
+
+/* EFECTO */
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+
+
+/* IMAGENES */
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+
+
+/* TITULO CARD */
+
+.card h3{
+    font-size:35px;
+    margin-top:20px;
+    color:#e8190a;
+    font-family:'Bebas Neue',sans-serif;
+}
+
+
+
+/* TEXTO CARD */
+
+.card p{
+    padding:10px 20px;
+    font-size:18px;
+    line-height:1.5;
+}
+
+
+
+/* BOTON CARD */
+
+.card .btn{
+    margin-top:15px;
+}
+
+
+
+/* ================================= */
+/* CLIENTES */
+/* ================================= */
+
+.clientes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    width:90%;
+    margin:auto;
+    margin-bottom:80px;
+}
+
+
+
+/* TESTIMONIOS */
+
+.cliente-card{
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+}
+
+
+
+/* FOTO CLIENTE */
+
+.cliente-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+
+
+/* NOMBRE */
+
+.cliente-card h3{
+    color:#e8190a;
+    margin-bottom:15px;
+}
+
+
+
+/* ================================= */
+/* CONTACTO */
+/* ================================= */
+
+.contacto-box{
+    width:90%;
+    max-width:800px;
+    margin:auto;
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:10px;
+    margin-bottom:80px;
+}
+
+
+
+/* INPUTS */
+
+.contacto-box input,
+.contacto-box textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:5px;
+    background:#333;
+    color:white;
+}
+
+
+
+/* TEXTAREA */
+
+.contacto-box textarea{
+    resize:none;
+    height:150px;
+}
+
+
+
+/* ================================= */
+/* RESPONSIVE */
+/* ================================= */
+
+@media(max-width:768px){
+
+    .page-title{
+        font-size:45px;
+    }
+
+    .card h3{
+        font-size:28px;
+    }
+
+    .card p{
+        font-size:16px;
+    }
+
+}
