@@ -1,0 +1,114 @@
+/* GENERAL */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    background:#111;
+    color:white;
+    font-family:'Barlow',sans-serif;
+}
+
+/* MENU */
+nav{
+    background:black;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+}
+
+/* LOGO */
+.logo img{
+    width:120px;
+}
+
+/* MENU */
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+/* ESPACIO */
+nav ul li{
+    margin-left:25px;
+}
+
+/* LINKS */
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+}
+
+/* EFECTO */
+nav ul li a:hover{
+    color:red;
+}
+
+/* TITULO */
+.titulo{
+    text-align:center;
+    padding:60px;
+}
+
+/* H1 */
+.titulo h1{
+    color:red;
+    font-size:70px;
+    font-family:'Bebas Neue',sans-serif;
+}
+
+/* PRODUCTOS */
+.productos{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:40px;
+}
+
+/* TARJETAS */
+.producto{
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    width:280px;
+}
+
+/* IMAGEN */
+.producto img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+}
+
+/* TITULO */
+.producto h2{
+    color:red;
+    margin-top:15px;
+}
+
+/* PRECIO */
+.producto p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+/* FOOTER */
+footer{
+    background:black;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+/* LOGO */
+footer img{
+    width:100px;
+    margin-bottom:15px;
+}

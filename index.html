@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
-    <!-- CONFIGURACION DE LA PAGINA -->
+    <!-- CONFIGURACION PRINCIPAL -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- TITULO -->
     <title>Inicio | AutoRep</title>
 
-    <!-- ENLACE AL CSS -->
+    <!-- CSS PRINCIPAL -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- FUENTES -->
@@ -23,10 +24,7 @@
 
 <body>
 
-    <!-- ================================= -->
     <!-- MENU DE NAVEGACION -->
-    <!-- ================================= -->
-
     <nav>
 
         <!-- LOGO -->
@@ -49,47 +47,30 @@
 
             <li><a href="contacto.html">Contacto</a></li>
 
+            <li><a href="politicas.html">Políticas</a></li>
+
         </ul>
 
     </nav>
 
-
-
-    <!-- ================================= -->
     <!-- SECCION PRINCIPAL -->
-    <!-- ================================= -->
-
-    <section id="inicio">
+    <section class="hero">
 
         <!-- IMAGEN PRINCIPAL -->
-        <div class="hero-img">
+        <img src="img/taller.png" alt="Taller Automotriz">
 
-            <img src="img/taller.png" alt="Taller mecanico">
-
-        </div>
-
-
-
-        <!-- TEXTO SOBRE LA IMAGEN -->
-        <div class="hero-content">
+        <!-- CONTENIDO SOBRE LA IMAGEN -->
+        <div class="hero-text">
 
             <!-- TITULO -->
-            <h1>
-
-                AutoRep
-
-            </h1>
-
-
+            <h1>AutoRep</h1>
 
             <!-- TEXTO -->
             <p>
 
-                Tienda de refaccionaria, vehículos y servicios mecánicos.
+                Refacciones, mantenimiento y servicios mecánicos profesionales.
 
             </p>
-
-
 
             <!-- BOTON -->
             <a href="productos.html" class="btn">
@@ -102,42 +83,45 @@
 
     </section>
 
-
-
-    <!-- ================================= -->
-    <!-- INFORMACION DE CONTACTO -->
-    <!-- ================================= -->
-
-    <section id="info-contacto">
+    <!-- SECCION QUIENES SOMOS -->
+    <section class="quienes">
 
         <!-- TITULO -->
-        <h2>
+        <h2>¿Quiénes Somos?</h2>
 
-            Contacto y Redes Sociales
+        <!-- TEXTO -->
+        <p>
 
-        </h2>
+            AutoRep es una empresa dedicada a la venta de refacciones
+            automotrices y servicios mecánicos. Nuestro objetivo es brindar
+            seguridad, calidad y confianza a cada cliente mediante atención
+            profesional y productos de alta calidad.
 
+        </p>
 
+    </section>
 
-        <!-- TABLA DE CONTACTO -->
-        <table class="contact-table">
+    <!-- SECCION CONTACTO -->
+    <section class="contacto">
 
+        <!-- TITULO -->
+        <h2>Contacto y Redes Sociales</h2>
 
+        <!-- TABLA -->
+        <table>
 
             <!-- TELEFONO -->
             <tr>
 
-                <td class="icon-cell">
+                <td>
 
-                    <img src="icons/telefono.png" alt="Telefono" class="contact-icon-img">
+                    <img src="icons/telefono.png" alt="Telefono" class="icono-contacto">
 
                 </td>
 
                 <td>
 
-                    Telefono
-
-                    <br>
+                    Teléfono <br>
 
                     <small>+442 8952924</small>
 
@@ -145,22 +129,18 @@
 
             </tr>
 
-
-
             <!-- CORREO -->
             <tr>
 
-                <td class="icon-cell">
+                <td>
 
-                    <img src="icons/email.png" alt="Email" class="contact-icon-img">
+                    <img src="icons/email.png" alt="Correo" class="icono-contacto">
 
                 </td>
 
                 <td>
 
-                    Correo
-
-                    <br>
+                    Correo <br>
 
                     <small>info@autorep.com</small>
 
@@ -168,45 +148,18 @@
 
             </tr>
 
-
-
-            <!-- TIKTOK -->
-            <tr>
-
-                <td class="icon-cell">
-
-                    <img src="icons/tiktok.png" alt="Tiktok" class="contact-icon-img">
-
-                </td>
-
-                <td>
-
-                    TikTok
-
-                    <br>
-
-                    <small>@autorep3</small>
-
-                </td>
-
-            </tr>
-
-
-
             <!-- INSTAGRAM -->
             <tr>
 
-                <td class="icon-cell">
+                <td>
 
-                    <img src="icons/instagram.png" alt="Instagram" class="contact-icon-img">
+                    <img src="icons/instagram.png" alt="Instagram" class="icono-contacto">
 
                 </td>
 
                 <td>
 
-                    Instagram
-
-                    <br>
+                    Instagram <br>
 
                     <small>@Autor_ep</small>
 
@@ -214,22 +167,18 @@
 
             </tr>
 
-
-
             <!-- WHATSAPP -->
             <tr>
 
-                <td class="icon-cell">
+                <td>
 
-                    <img src="icons/whatsapp.png" alt="Whatsapp" class="contact-icon-img">
+                    <img src="icons/whatsapp.png" alt="Whatsapp" class="icono-contacto">
 
                 </td>
 
                 <td>
 
-                    Whatsapp
-
-                    <br>
+                    Whatsapp <br>
 
                     <small>+4428952924</small>
 
@@ -241,94 +190,11 @@
 
     </section>
 
-
-
-    <!-- ================================= -->
-    <!-- SECCION EXTRA -->
-    <!-- ================================= -->
-
-    <section class="extra-info">
-
-        <!-- TITULO -->
-        <h2>
-
-            ¿Quiénes Somos?
-
-        </h2>
-
-
-
-        <!-- TEXTO -->
-        <p>
-
-            En AutoRep nos dedicamos a la venta de refacciones y servicios mecánicos para diferentes tipos de vehículos. Nuestro objetivo es brindar calidad, confianza y seguridad a todos nuestros clientes.
-
-        </p>
-
-    </section>
-
-
-
-    <!-- ================================= -->
     <!-- FOOTER -->
-    <!-- ================================= -->
-
     <footer>
 
-        <!-- LOGO DEL FOOTER -->
+        <!-- LOGO FOOTER -->
         <img src="img/logo.png" alt="Logo AutoRep">
-
-
-
-        <!-- REDES SOCIALES -->
-        <div class="social-links">
-
-            <!-- FACEBOOK -->
-            <a href="#" class="social-icon">
-
-                <img src="icons/facebook.png" alt="Facebook">
-
-            </a>
-
-
-
-            <!-- INSTAGRAM -->
-            <a href="#" class="social-icon">
-
-                <img src="icons/instagram.png" alt="Instagram">
-
-            </a>
-
-
-
-            <!-- EMAIL -->
-            <a href="#" class="social-icon">
-
-                <img src="icons/email.png" alt="Email">
-
-            </a>
-
-
-
-            <!-- WHATSAPP -->
-            <a href="#" class="social-icon">
-
-                <img src="icons/whatsapp.png" alt="Whatsapp">
-
-            </a>
-
-
-
-            <!-- TIKTOK -->
-            <a href="#" class="social-icon">
-
-                <img src="icons/tiktok.png" alt="Tiktok">
-
-            </a>
-
-        </div>
-
-
 
         <!-- TEXTO -->
         <p>
@@ -339,10 +205,9 @@
 
     </footer>
 
-
-
     <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
 
 </body>
+
 </html>

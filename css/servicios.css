@@ -1,0 +1,119 @@
+/* GENERAL */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    background:#111;
+    color:white;
+    font-family:'Barlow',sans-serif;
+}
+
+/* MENU */
+nav{
+    background:black;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+}
+
+/* LOGO */
+.logo img{
+    width:120px;
+}
+
+/* MENU */
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+/* ESPACIO */
+nav ul li{
+    margin-left:25px;
+}
+
+/* LINKS */
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+}
+
+/* EFECTO */
+nav ul li a:hover{
+    color:red;
+}
+
+/* TITULO */
+.titulo{
+    text-align:center;
+    padding:60px;
+}
+
+/* TITULO H1 */
+.titulo h1{
+    font-size:70px;
+    color:red;
+    font-family:'Bebas Neue',sans-serif;
+}
+
+/* TEXTO */
+.titulo p{
+    margin-top:15px;
+    font-size:22px;
+}
+
+/* CONTENEDOR */
+.contenedor-servicios{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:40px;
+}
+
+/* TARJETAS */
+.card{
+    background:#1b1b1b;
+    width:300px;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+/* EFECTO */
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* IMAGEN */
+.card img{
+    width:100px;
+    margin-bottom:20px;
+}
+
+/* TITULO */
+.card h2{
+    color:red;
+    margin-bottom:15px;
+}
+
+/* FOOTER */
+footer{
+    background:black;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+/* LOGO FOOTER */
+footer img{
+    width:100px;
+    margin-bottom:15px;
+}

@@ -1,533 +1,171 @@
-/* ================================= */
 /* CONFIGURACION GENERAL */
-/* ================================= */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-
-
-/* CUERPO */
-
+/* BODY */
 body{
-    font-family:'Barlow',sans-serif;
     background:#111;
     color:white;
+    font-family:'Barlow',sans-serif;
 }
 
-
-
-/* ================================= */
 /* MENU */
-/* ================================= */
-
 nav{
     background:black;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 50px;
+    padding:15px 50px;
 }
 
-
-
 /* LOGO */
-
 .logo img{
     width:120px;
 }
 
-
-
-/* OPCIONES MENU */
-
+/* MENU LISTA */
 nav ul{
     display:flex;
     list-style:none;
-    gap:30px;
 }
 
+/* ESPACIO ENTRE OPCIONES */
+nav ul li{
+    margin-left:25px;
+}
 
-
-/* LINKS MENU */
-
+/* LINKS */
 nav ul li a{
     text-decoration:none;
     color:white;
-    font-size:18px;
-    transition:.3s;
+    font-size:20px;
+    transition:0.3s;
 }
-
-
 
 /* EFECTO MENU */
-
 nav ul li a:hover{
-    color:#e8190a;
+    color:red;
 }
 
-
-
-/* ================================= */
-/* SECCION INICIO */
-/* ================================= */
-
-#inicio{
+/* HERO */
+.hero{
     position:relative;
-    text-align:center;
-}
-
-
-
-/* CONTENEDOR IMAGEN */
-
-.hero-img{
-    position:relative;
-}
-
-
-
-/* IMAGEN PRINCIPAL */
-
-.hero-img img{
     width:100%;
     height:90vh;
+    overflow:hidden;
+}
+
+/* IMAGEN PRINCIPAL */
+.hero img{
+    width:100%;
+    height:100%;
     object-fit:cover;
     filter:brightness(40%);
 }
 
-
-
-/* TEXTO ENCIMA DE LA IMAGEN */
-
-.hero-content{
+/* TEXTO SOBRE IMAGEN */
+.hero-text{
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    z-index:10;
-    width:90%;
+    text-align:center;
 }
-
-
 
 /* TITULO */
-
-.hero-content h1{
+.hero-text h1{
     font-size:100px;
+    color:red;
     font-family:'Bebas Neue',sans-serif;
-    margin-bottom:20px;
 }
-
-
 
 /* TEXTO */
-
-.hero-content p{
-    font-size:22px;
-    margin-bottom:30px;
+.hero-text p{
+    font-size:25px;
+    margin-top:10px;
 }
 
-
-
 /* BOTON */
-
 .btn{
     display:inline-block;
-    background:#e8190a;
+    margin-top:20px;
+    background:red;
     color:white;
     padding:15px 35px;
     text-decoration:none;
-    border-radius:5px;
-    font-size:18px;
-    transition:.3s;
+    border-radius:10px;
+    transition:0.3s;
 }
-
-
 
 /* EFECTO BOTON */
-
 .btn:hover{
     background:white;
-    color:#e8190a;
+    color:black;
 }
 
-
-
-/* ================================= */
-/* CONTACTO */
-/* ================================= */
-
-#info-contacto{
-    padding:80px 20px;
+/* QUIENES SOMOS */
+.quienes{
+    padding:60px;
     text-align:center;
 }
 
+/* TITULO */
+.quienes h2{
+    font-size:45px;
+    color:red;
+    margin-bottom:20px;
+}
 
+/* TEXTO */
+.quienes p{
+    width:80%;
+    margin:auto;
+    line-height:35px;
+    font-size:20px;
+}
+
+/* CONTACTO */
+.contacto{
+    padding:60px;
+    text-align:center;
+}
 
 /* TITULO CONTACTO */
-
-#info-contacto h2{
-    font-size:50px;
-    color:#e8190a;
-    margin-bottom:40px;
-    font-family:'Bebas Neue',sans-serif;
+.contacto h2{
+    color:red;
+    font-size:45px;
+    margin-bottom:30px;
 }
-
-
 
 /* TABLA */
-
-.contact-table{
+table{
     margin:auto;
-    border-spacing:20px;
 }
 
-
-
-/* ICONOS CONTACTO */
-
-.contact-icon-img{
-    width:35px;
-    height:35px;
-    object-fit:contain;
-}
-
-
-
-/* TEXTO TABLA */
-
-.contact-table td{
+/* CELDAS */
+td{
+    padding:20px;
     font-size:20px;
-    text-align:left;
 }
 
-
-
-/* ================================= */
-/* SECCION EXTRA */
-/* ================================= */
-
-.extra-info{
-    padding:80px 20px;
-    text-align:center;
-    background:#1b1b1b;
+/* ICONOS */
+.icono-contacto{
+    width:40px;
 }
 
-
-
-/* TITULO EXTRA */
-
-.extra-info h2{
-    font-size:50px;
-    color:#e8190a;
-    margin-bottom:20px;
-    font-family:'Bebas Neue',sans-serif;
-}
-
-
-
-/* TEXTO EXTRA */
-
-.extra-info p{
-    max-width:900px;
-    margin:auto;
-    font-size:20px;
-    line-height:1.7;
-}
-
-
-
-/* ================================= */
 /* FOOTER */
-/* ================================= */
-
 footer{
     background:black;
     text-align:center;
-    padding:40px 20px;
+    padding:30px;
+    margin-top:40px;
 }
-
-
 
 /* LOGO FOOTER */
-
-footer > img{
-    width:110px;
-    margin-bottom:20px;
-}
-
-
-
-/* REDES */
-
-.social-links{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    margin-bottom:20px;
-}
-
-
-
-/* ICONOS REDES */
-
-.social-icon img{
-    width:40px;
-    height:40px;
-    object-fit:contain;
-    transition:.3s;
-}
-
-
-
-/* EFECTO ICONOS */
-
-.social-icon img:hover{
-    transform:scale(1.2);
-}
-
-
-
-/* TEXTO FOOTER */
-
-footer p{
-    font-size:16px;
-}
-
-
-
-/* ================================= */
-/* RESPONSIVE */
-/* ================================= */
-
-@media(max-width:768px){
-
-    nav{
-        flex-direction:column;
-        gap:20px;
-        padding:20px;
-    }
-
-    nav ul{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .hero-content h1{
-        font-size:60px;
-    }
-
-    .hero-content p{
-        font-size:18px;
-    }
-
-    .contact-table td{
-        font-size:16px;
-    }
-
-}
-/* ================================= */
-/* PAGINAS INTERNAS */
-/* ================================= */
-
-.page-title{
-    text-align:center;
-    font-size:70px;
-    margin-top:50px;
-    margin-bottom:50px;
-    color:#e8190a;
-    font-family:'Bebas Neue',sans-serif;
-}
-
-
-
-/* CONTENEDOR GENERAL */
-
-.container{
-    width:90%;
-    margin:auto;
-}
-
-
-
-/* TARJETAS */
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-    margin-bottom:60px;
-}
-
-
-
-/* CARD */
-
-.card{
-    background:#1b1b1b;
-    border-radius:10px;
-    overflow:hidden;
-    transition:.3s;
-    text-align:center;
-    padding-bottom:20px;
-}
-
-
-
-/* EFECTO */
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-
-
-/* IMAGENES */
-
-.card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-}
-
-
-
-/* TITULO CARD */
-
-.card h3{
-    font-size:35px;
-    margin-top:20px;
-    color:#e8190a;
-    font-family:'Bebas Neue',sans-serif;
-}
-
-
-
-/* TEXTO CARD */
-
-.card p{
-    padding:10px 20px;
-    font-size:18px;
-    line-height:1.5;
-}
-
-
-
-/* BOTON CARD */
-
-.card .btn{
-    margin-top:15px;
-}
-
-
-
-/* ================================= */
-/* CLIENTES */
-/* ================================= */
-
-.clientes{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-    width:90%;
-    margin:auto;
-    margin-bottom:80px;
-}
-
-
-
-/* TESTIMONIOS */
-
-.cliente-card{
-    background:#1b1b1b;
-    padding:30px;
-    border-radius:10px;
-    text-align:center;
-}
-
-
-
-/* FOTO CLIENTE */
-
-.cliente-card img{
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    object-fit:cover;
-    margin-bottom:20px;
-}
-
-
-
-/* NOMBRE */
-
-.cliente-card h3{
-    color:#e8190a;
+footer img{
+    width:100px;
     margin-bottom:15px;
-}
-
-
-
-/* ================================= */
-/* CONTACTO */
-/* ================================= */
-
-.contacto-box{
-    width:90%;
-    max-width:800px;
-    margin:auto;
-    background:#1b1b1b;
-    padding:40px;
-    border-radius:10px;
-    margin-bottom:80px;
-}
-
-
-
-/* INPUTS */
-
-.contacto-box input,
-.contacto-box textarea{
-    width:100%;
-    padding:15px;
-    margin-bottom:20px;
-    border:none;
-    border-radius:5px;
-    background:#333;
-    color:white;
-}
-
-
-
-/* TEXTAREA */
-
-.contacto-box textarea{
-    resize:none;
-    height:150px;
-}
-
-
-
-/* ================================= */
-/* RESPONSIVE */
-/* ================================= */
-
-@media(max-width:768px){
-
-    .page-title{
-        font-size:45px;
-    }
-
-    .card h3{
-        font-size:28px;
-    }
-
-    .card p{
-        font-size:16px;
-    }
-
 }
