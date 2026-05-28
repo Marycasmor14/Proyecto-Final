@@ -10,7 +10,7 @@
 
 
 
-/* CUERPO PAGINA */
+/* CUERPO */
 
 body{
     font-family:'Barlow',sans-serif;
@@ -25,11 +25,15 @@ body{
 /* ================================= */
 
 nav{
-    background:#000;
+    background:black;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:20px 50px;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:100;
 }
 
 
@@ -52,7 +56,7 @@ nav ul{
 
 
 
-/* LINKS */
+/* LINKS MENU */
 
 nav ul li a{
     text-decoration:none;
@@ -66,7 +70,7 @@ nav ul li a{
 /* EFECTO MENU */
 
 nav ul li a:hover{
-    color:red;
+    color:#e8190a;
 }
 
 
@@ -76,8 +80,10 @@ nav ul li a:hover{
 /* ================================= */
 
 #inicio{
-    text-align:center;
-    padding:50px 20px;
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
 }
 
 
@@ -85,18 +91,24 @@ nav ul li a:hover{
 /* IMAGEN PRINCIPAL */
 
 .hero-img img{
-    width:80%;
-    max-width:900px;
-    border-radius:10px;
-    margin-top:30px;
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+    filter:brightness(40%);
 }
 
 
 
-/* CONTENIDO */
+/* TEXTO ENCIMA DE LA IMAGEN */
 
 .hero-content{
-    margin-top:30px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    z-index:10;
+    width:90%;
 }
 
 
@@ -104,9 +116,10 @@ nav ul li a:hover{
 /* TITULO */
 
 .hero-content h1{
-    font-size:80px;
+    font-size:100px;
     font-family:'Bebas Neue',sans-serif;
-    color:red;
+    color:white;
+    margin-bottom:20px;
 }
 
 
@@ -114,8 +127,8 @@ nav ul li a:hover{
 /* TEXTO */
 
 .hero-content p{
-    font-size:20px;
-    margin:20px 0;
+    font-size:22px;
+    margin-bottom:30px;
 }
 
 
@@ -124,11 +137,12 @@ nav ul li a:hover{
 
 .btn{
     display:inline-block;
-    background:red;
+    background:#e8190a;
     color:white;
-    padding:15px 30px;
+    padding:15px 35px;
     text-decoration:none;
     border-radius:5px;
+    font-size:18px;
     transition:.3s;
 }
 
@@ -138,7 +152,7 @@ nav ul li a:hover{
 
 .btn:hover{
     background:white;
-    color:black;
+    color:#e8190a;
 }
 
 
@@ -148,18 +162,18 @@ nav ul li a:hover{
 /* ================================= */
 
 #info-contacto{
-    padding:60px 20px;
+    padding:80px 20px;
     text-align:center;
 }
 
 
 
-/* TITULO CONTACTO */
+/* TITULO */
 
 #info-contacto h2{
-    font-size:45px;
+    font-size:50px;
+    color:#e8190a;
     margin-bottom:40px;
-    color:red;
     font-family:'Bebas Neue',sans-serif;
 }
 
@@ -194,14 +208,47 @@ nav ul li a:hover{
 
 
 /* ================================= */
+/* SECCION EXTRA */
+/* ================================= */
+
+.extra-info{
+    padding:80px 20px;
+    text-align:center;
+    background:#1b1b1b;
+}
+
+
+
+/* TITULO */
+
+.extra-info h2{
+    font-size:50px;
+    color:#e8190a;
+    margin-bottom:20px;
+    font-family:'Bebas Neue',sans-serif;
+}
+
+
+
+/* TEXTO */
+
+.extra-info p{
+    max-width:900px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.7;
+}
+
+
+
+/* ================================= */
 /* FOOTER */
 /* ================================= */
 
 footer{
     background:black;
     text-align:center;
-    padding:30px 20px;
-    margin-top:50px;
+    padding:40px 20px;
 }
 
 
@@ -209,13 +256,13 @@ footer{
 /* LOGO FOOTER */
 
 footer > img{
-    width:100px;
+    width:110px;
     margin-bottom:20px;
 }
 
 
 
-/* REDES SOCIALES */
+/* REDES */
 
 .social-links{
     display:flex;
@@ -262,6 +309,7 @@ footer p{
     nav{
         flex-direction:column;
         gap:20px;
+        padding:20px;
     }
 
     nav ul{
@@ -270,7 +318,7 @@ footer p{
     }
 
     .hero-content h1{
-        font-size:55px;
+        font-size:60px;
     }
 
     .hero-content p{
