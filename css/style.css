@@ -6,6 +6,7 @@
 }
 
 body{
+    background: white;
     overflow-x: hidden;
 }
 
@@ -16,7 +17,8 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: #111;
+    background: white;
+    border-bottom: 2px solid red;
 }
 
 /* LOGO */
@@ -32,42 +34,19 @@ body{
 }
 
 .menu li a{
-    color: white;
+    color: black;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .menu li a:hover{
-    color: #00c3ff;
-}
-
-/* BUSCADOR */
-.search{
-    display: flex;
-    align-items: center;
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.search input{
-    border: none;
-    padding: 8px 12px;
-    outline: none;
-    width: 150px;
-}
-
-.search button{
-    border: none;
-    background: #00c3ff;
-    padding: 8px 12px;
-    cursor: pointer;
-    color: white;
+    color: red;
 }
 
 /* HERO */
 .hero{
     position: relative;
+    text-align: center;
 }
 
 .hero img{
@@ -79,20 +58,26 @@ body{
 .hero-text{
     position: absolute;
     top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: white;
 }
 
 .hero-text h1{
     font-size: 60px;
+    color: red;
+}
+
+.hero-text p{
+    color: white;
 }
 
 .btn{
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background: #00c3ff;
+    background: red;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -104,16 +89,31 @@ body{
     text-align: center;
 }
 
-.icono{
-    width: 30px;
+/* TITULOS */
+h2{
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* TEXTO GENERAL */
+p{
+    color: black;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* CONTACTO TABLA */
+.contacto table{
+    margin: auto;
 }
 
 /* FOOTER */
 footer{
-    background: #111;
+    background: black;
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 40px;
 }
 
 footer img{
