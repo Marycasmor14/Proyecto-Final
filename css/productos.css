@@ -1,3 +1,10 @@
+body{
+    font-family: Arial;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
 #contenedor-productos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -7,11 +14,9 @@
 
 .producto{
     background: #111;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
     border: 1px solid red;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .producto img{
@@ -37,13 +42,4 @@
     background: #111;
     padding: 20px;
     width: 300px;
-    color: white;
-    text-align: center;
-}
-
-.cerrar{
-    float: right;
-    cursor: pointer;
-    color: red;
-    font-size: 22px;
 }

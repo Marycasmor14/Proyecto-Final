@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 const productos = [
-    {nombre:"Aceite Motor", precio:250, img:"img/acemotor.png", desc:"Lubricante para motor"},
+       {nombre:"Aceite Motor", precio:250, img:"img/acemotor.png", desc:"Lubricante para motor"},
     {nombre:"Filtro Aire", precio:180, img:"img/aire.png", desc:"Filtra impurezas del aire"},
     {nombre:"Bujías", precio:300, img:"img/bujias.png", desc:"Encendido del motor"},
     {nombre:"Balatas", precio:450, img:"img/balatas.png", desc:"Sistema de frenado"},
@@ -25,11 +25,6 @@ const productos = [
 ];
 
 const contenedor = document.getElementById("contenedor-productos");
-
-if(!contenedor){
-    console.log("NO existe contenedor");
-    return;
-}
 
 productos.forEach((p,i)=>{
     contenedor.innerHTML += `
