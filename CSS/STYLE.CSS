@@ -1,17 +1,4 @@
-/*  VARIABLES */
-
-:root{
-
-    --rojo:#e8190a;
-    --negro:#0d0d0d;
-    --gris:#888;
-    --grisOscuro:#1a1a1a;
-    --blanco:#f5f5f0;
-
-}
-
-
-/* RESET */
+/* CONFIGURACION GENERAL */
 
 *{
 
@@ -26,11 +13,10 @@
 
 body{
 
-    background:var(--negro);
-    color:var(--blanco);
+    background:#0d0d0d;
+    color:white;
     font-family:'Barlow',sans-serif;
     overflow-x:hidden;
-    cursor:none;
 
 }
 
@@ -39,15 +25,14 @@ body{
 
 #cursor{
 
-    width:18px;
-    height:18px;
+    width:15px;
+    height:15px;
 
-    border:2px solid var(--rojo);
+    border:2px solid red;
+
     border-radius:50%;
 
     position:fixed;
-
-    transform:translate(-50%,-50%);
 
     pointer-events:none;
 
@@ -56,14 +41,13 @@ body{
 }
 
 
-/*   NAVBAR  */
+/* NAVBAR */
 
 nav{
 
     position:fixed;
 
     top:0;
-    left:0;
 
     width:100%;
 
@@ -77,8 +61,6 @@ nav{
 
     background:rgba(0,0,0,.85);
 
-    backdrop-filter:blur(10px);
-
     z-index:1000;
 
 }
@@ -89,7 +71,6 @@ nav{
 .logo img{
 
     height:60px;
-    width:auto;
 
 }
 
@@ -111,24 +92,20 @@ nav ul{
 
 nav ul li a{
 
-    color:var(--gris);
+    color:white;
 
     text-decoration:none;
-
-    text-transform:uppercase;
-
-    font-size:.9rem;
 
     transition:.3s;
 
 }
 
 
-/* HOVER LINKS */
+/* HOVER */
 
 nav ul li a:hover{
 
-    color:var(--rojo);
+    color:red;
 
 }
 
@@ -147,8 +124,6 @@ nav ul li a:hover{
 
     position:relative;
 
-    overflow:hidden;
-
 }
 
 
@@ -156,44 +131,78 @@ nav ul li a:hover{
 
 .hero-bg img{
 
+    position:absolute;
+
     width:100%;
 
-    height:100vh;
+    height:100%;
 
     object-fit:cover;
 
-    position:absolute;
-
-    top:0;
-    left:0;
+    opacity:.3;
 
     z-index:-1;
-
-    opacity:.30;
 
 }
 
 
-/* TITULO HERO */
+/* CONTENIDO */
+
+.hero-content{
+
+    max-width:700px;
+
+}
+
+
+/* ETIQUETA */
+
+.hero-tag{
+
+    background:red;
+
+    padding:10px 15px;
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+}
+
+
+/* TITULO */
 
 .hero-title{
 
-    font-family:'Bebas Neue',sans-serif;
-
     font-size:7rem;
+
+    font-family:'Bebas Neue',sans-serif;
 
     line-height:.9;
 
 }
 
 
-/* PALABRA ROJA */
+/* COLOR ROJO */
 
 .hero-title em{
 
-    color:var(--rojo);
+    color:red;
 
     font-style:normal;
+
+}
+
+
+/* TEXTO */
+
+.hero-sub{
+
+    margin-top:20px;
+
+    line-height:1.7;
+
+    max-width:500px;
 
 }
 
@@ -204,17 +213,15 @@ nav ul li a:hover{
 
     display:inline-block;
 
-    margin-top:35px;
+    margin-top:30px;
 
-    background:var(--rojo);
+    background:red;
 
     color:white;
 
-    text-decoration:none;
-
     padding:15px 35px;
 
-    font-weight:bold;
+    text-decoration:none;
 
     transition:.3s;
 
@@ -225,7 +232,16 @@ nav ul li a:hover{
 
 .btn:hover{
 
-    transform:translateY(-4px);
+    transform:translateY(-5px);
+
+}
+
+
+/* SECCIONES */
+
+section{
+
+    padding:100px 50px;
 
 }
 
@@ -234,98 +250,25 @@ nav ul li a:hover{
 
 .section-title{
 
-    font-family:'Bebas Neue',sans-serif;
-
     font-size:4rem;
+
+    font-family:'Bebas Neue',sans-serif;
 
 }
 
 
-/* COLOR ROJO */
+/* COLOR */
 
 .section-title span{
 
-    color:var(--rojo);
+    color:red;
 
 }
 
 
-/* SERVICIOS */
+/* GRID */
 
-#servicios{
-
-    padding:100px 50px;
-
-}
-
-
-/* GRID SERVICIOS */
-
-.services-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:25px;
-
-}
-
-
-/* TARJETA */
-
-.service-card{
-
-    background:var(--grisOscuro);
-
-    padding:35px;
-
-    border:1px solid rgba(255,255,255,.08);
-
-    transition:.3s;
-
-}
-
-
-/* HOVER */
-
-.service-card:hover{
-
-    transform:translateY(-8px);
-
-    border-color:var(--rojo);
-
-}
-
-
-/* ICONOS */
-
-.service-icon-img{
-
-    width:60px;
-
-    height:60px;
-
-    object-fit:contain;
-
-    margin-bottom:20px;
-
-}
-
-
-/* PRODUCTOS */
-
-#productos{
-
-    padding:100px 50px;
-
-    background:#111;
-
-}
-
-
-/* GRID PRODUCTOS */
-
+.services-grid,
 .products-grid{
 
     display:grid;
@@ -334,31 +277,92 @@ nav ul li a:hover{
 
     gap:25px;
 
+    margin-top:50px;
+
 }
 
 
-/* TARJETA PRODUCTO */
+/* TARJETAS */
 
+.service-card,
 .product-card{
 
-    background:var(--grisOscuro);
+    background:#1a1a1a;
 
-    padding:20px;
+    padding:25px;
+
+    border-radius:10px;
+
+    transition:.3s;
 
 }
 
 
-/* IMAGEN PRODUCTO */
+/* EFECTO */
 
+.service-card:hover,
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+/* IMAGENES */
+
+.service-icon-img,
 .product-img{
 
     width:100%;
 
-    height:220px;
-
-    object-fit:cover;
-
     border-radius:10px;
+
+}
+
+
+/* NOMBRE */
+
+.service-name,
+.product-name{
+
+    margin-top:15px;
+
+    font-size:2rem;
+
+    font-family:'Bebas Neue',sans-serif;
+
+}
+
+
+/* TEXTO */
+
+.service-desc{
+
+    margin-top:10px;
+
+    line-height:1.6;
+
+}
+
+
+/* PRECIO */
+
+.product-price{
+
+    margin-top:10px;
+
+    color:red;
+
+    font-weight:bold;
+
+}
+
+
+/* CONTACTO */
+
+#contacto{
+
+    text-align:center;
 
 }
 
@@ -367,9 +371,22 @@ nav ul li a:hover{
 
 footer{
 
+    text-align:center;
+
     padding:40px;
 
-    text-align:center;
+    background:black;
+
+}
+
+
+/* LOGO FOOTER */
+
+.footer-logo img{
+
+    height:50px;
+
+    margin-bottom:20px;
 
 }
 
@@ -381,6 +398,14 @@ footer{
     .hero-title{
 
         font-size:4rem;
+
+    }
+
+    nav{
+
+        flex-direction:column;
+
+        gap:20px;
 
     }
 
