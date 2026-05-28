@@ -4,16 +4,11 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Productos | AutoRep</title>
 
-    <link rel="stylesheet" href="css/productos.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;700&display=swap" rel="stylesheet">
 
@@ -21,95 +16,59 @@
 
 <body>
 
-    <!-- MENU -->
-    <nav>
+<!-- NAV -->
+<nav class="nav">
 
-        <div class="logo">
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo AutoRep">
+    </div>
 
-            <img src="img/logo.png" alt="Logo">
+    <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="politicas.html">Políticas</a></li>
+    </ul>
 
-        </div>
+</nav>
 
-        <ul>
+<!-- TITULO -->
+<section class="productos">
+    <h2>Productos</h2>
 
-            <li><a href="index.html">Inicio</a></li>
+    <!-- AQUI SE CARGAN LOS 20 PRODUCTOS DESDE JS -->
+    <div id="contenedor-productos"></div>
+</section>
 
-            <li><a href="servicios.html">Servicios</a></li>
+<!-- MODAL -->
+<div id="modal" class="modal">
 
-            <li><a href="productos.html">Productos</a></li>
+    <div class="modal-contenido">
 
-            <li><a href="clientes.html">Clientes</a></li>
+        <span class="cerrar" onclick="cerrarModal()">×</span>
 
-            <li><a href="contacto.html">Contacto</a></li>
+        <img id="modal-img" src="" alt="producto">
 
-            <li><a href="politicas.html">Políticas</a></li>
+        <h3 id="modal-nombre"></h3>
 
-        </ul>
+        <p id="modal-precio"></p>
 
-    </nav>
+        <p id="modal-descripcion"></p>
 
-    <!-- TITULO -->
-    <section class="titulo">
+    </div>
 
-        <h1>Productos</h1>
+</div>
 
-        <p>
+<!-- FOOTER -->
+<footer>
+    <img src="img/logo.png" alt="Logo AutoRep">
+    <p>© 2026 AutoRep - Todos los derechos reservados</p>
+</footer>
 
-            Contamos con refacciones y accesorios automotrices de calidad.
-
-        </p>
-
-    </section>
-
-    <!-- PRODUCTOS -->
-    <section class="productos">
-
-        <div class="producto">
-
-            <img src="img/aceite.png" alt="Aceite">
-
-            <h2>Aceite</h2>
-
-            <p>$350 MXN</p>
-
-        </div>
-
-        <div class="producto">
-
-            <img src="img/bateria.png" alt="Batería">
-
-            <h2>Batería</h2>
-
-            <p>$1800 MXN</p>
-
-        </div>
-
-        <div class="producto">
-
-            <img src="img/balatas.png" alt="Balatas">
-
-            <h2>Balatas</h2>
-
-            <p>$950 MXN</p>
-
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-
-        <img src="img/logo.png" alt="Logo">
-
-        <p>
-
-            © 2026 AutoRep - Todos los derechos reservados
-
-        </p>
-
-    </footer>
-
-    <script src="js/productos.js"></script>
+<!-- JS -->
+<script src="js/script.js"></script>
 
 </body>
 
