@@ -3,22 +3,25 @@
 
 <head>
 
-    <!-- CONFIGURACION GENERAL -->
+    <!-- CONFIGURACION GENERAL DE LA PAGINA -->
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- TITULO -->
-    <title>AUTOREP</title>
 
-    <!-- FUENTES -->
+    <!-- TITULO QUE APARECE EN LA PESTAÑA -->
+    <title>Proyecto Final | AutoRep</title>
+
+
+    <!-- FUENTES DE GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- ARCHIVO CSS -->
+
+    <!-- CONEXION CON CSS -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -26,27 +29,25 @@
 <body>
 
 
-    <!-- CURSOR PERSONALIZADO -->
-    <div id="cursor"></div>
+    <!-- ========================= -->
+    <!-- MENU DE NAVEGACION -->
+    <!-- ========================= -->
 
-
-    <!-- BARRA DE NAVEGACION -->
     <nav>
 
-        <!-- LOGO -->
+        <!-- LOGO DE LA EMPRESA -->
         <div class="logo">
 
-            <!-- AQUI VOY A PONER MI LOGO -->
-            <img src="img/logo.png" alt="Logo">
+            <img src="img/logo.png" alt="Logo AutoRep">
 
         </div>
 
 
-        <!-- MENU -->
+        <!-- OPCIONES DEL MENU -->
         <ul>
 
             <li>
-                <a href="#hero">Inicio</a>
+                <a href="#inicio">Inicio</a>
             </li>
 
             <li>
@@ -58,6 +59,10 @@
             </li>
 
             <li>
+                <a href="#clientes">Clientes</a>
+            </li>
+
+            <li>
                 <a href="#contacto">Contacto</a>
             </li>
 
@@ -66,49 +71,43 @@
     </nav>
 
 
+
+    <!-- ========================= -->
     <!-- SECCION PRINCIPAL -->
-    <section id="hero">
+    <!-- ========================= -->
+
+    <section id="inicio">
 
 
         <!-- IMAGEN PRINCIPAL -->
-        <div class="hero-bg">
+        <div class="hero-img">
 
-            <!-- IMAGEN DEL TALLER -->
-            <img src="img/taller.png" alt="Taller mecanico">
+            <img src="img/taller.jpg" alt="Taller mecanico">
 
         </div>
 
 
-        <!-- CONTENIDO -->
+
+        <!-- TEXTO PRINCIPAL -->
         <div class="hero-content">
 
-            <span class="hero-tag">
+            <h1>
 
-                Querétaro, México
-
-            </span>
-
-
-            <!-- TITULO -->
-            <h1 class="hero-title">
-
-                Tu AUTO <br> merece lo <br><em>mejor.</em>
+                AutoRep
 
             </h1>
 
+            <p>
 
-            <!-- TEXTO -->
-            <p class="hero-sub">
-
-                Refacciones, vehículos y servicios mecánicos profesionales para todo tipo de automóvil.
+                Tienda de refaccionaria, vehículos y servicios mecánicos.
 
             </p>
 
 
             <!-- BOTON -->
-            <a href="#servicios" class="btn">
+            <a href="#productos" class="btn">
 
-                Ver Servicios
+                Ver Productos
 
             </a>
 
@@ -117,81 +116,79 @@
     </section>
 
 
+
+    <!-- ========================= -->
     <!-- SERVICIOS -->
+    <!-- ========================= -->
+
     <section id="servicios">
 
+        <h2>
 
-        <!-- TITULO -->
-        <div class="section-header">
+            Nuestros Servicios
 
-            <h2 class="section-title">
-
-                Nuestros <span>Servicios</span>
-
-            </h2>
-
-        </div>
+        </h2>
 
 
-        <!-- GRID -->
-        <div class="services-grid">
+        <div class="cards">
 
 
             <!-- CARD 1 -->
-            <div class="service-card">
+            <div class="card">
 
-                <!-- ICONO -->
-                <img src="icons/general.png" class="service-icon-img">
+                <img src="icons/general.png" alt="Servicio general">
 
-                <h3 class="service-name">
+                <h3>
 
                     Servicio General
 
                 </h3>
 
-                <p class="service-desc">
+                <p>
 
-                    Afinaciones, cambios de aceite y mantenimiento general.
+                    Afinaciones, mantenimiento preventivo y revisión general.
 
                 </p>
 
             </div>
+
 
 
             <!-- CARD 2 -->
-            <div class="service-card">
+            <div class="card">
 
-                <img src="icons/diagnostico.png" class="service-icon-img">
+                <img src="icons/diagnostico.png" alt="Diagnostico">
 
-                <h3 class="service-name">
+                <h3>
 
-                    Diagnóstico Computarizado
+                    Diagnóstico
 
                 </h3>
 
-                <p class="service-desc">
+                <p>
 
-                    Escaneo y detección de fallas con equipo especializado.
+                    Escaneo computarizado y detección de fallas del vehículo.
 
                 </p>
 
             </div>
 
 
+
             <!-- CARD 3 -->
-            <div class="service-card">
+            <div class="card">
 
-                <img src="icons/frenos.png" class="service-icon-img">
+                <img src="icons/frenos.png" alt="Frenos">
 
-                <h3 class="service-name">
+                <h3>
 
-                    Frenos y Suspensión
+                    Frenos
 
                 </h3>
 
-                <p class="service-desc">
+                <p>
 
-                    Reparación y mantenimiento de frenos y amortiguadores.
+                    Reparación y mantenimiento del sistema de frenos.
 
                 </p>
 
@@ -202,60 +199,128 @@
     </section>
 
 
+
+
+    <!-- ========================= -->
     <!-- PRODUCTOS -->
+    <!-- ========================= -->
+
     <section id="productos">
 
+        <h2>
 
-        <!-- TITULO -->
-        <div class="section-header">
+            Productos Destacados
 
-            <h2 class="section-title">
-
-                Productos <span>Destacados</span>
-
-            </h2>
-
-        </div>
+        </h2>
 
 
-        <!-- GRID -->
-        <div class="products-grid">
+        <div class="cards">
 
 
             <!-- PRODUCTO 1 -->
-            <div class="product-card">
+            <div class="card">
 
-                <img src="img/aceite.jpg" class="product-img">
+                <img src="img/aceite.jpg" alt="Aceite">
 
-                <h3 class="product-name">
+                <h3>
 
                     Aceite Sintético
 
                 </h3>
 
-                <p class="product-price">
+                <p>
 
-                    $320 MXN
+                    Precio: $320 MXN
 
                 </p>
 
             </div>
 
 
+
             <!-- PRODUCTO 2 -->
-            <div class="product-card">
+            <div class="card">
 
-                <img src="img/bateria.jpg" class="product-img">
+                <img src="img/bateria.jpg" alt="Bateria">
 
-                <h3 class="product-name">
+                <h3>
 
                     Batería Automotriz
 
                 </h3>
 
-                <p class="product-price">
+                <p>
 
-                    $1,450 MXN
+                    Precio: $1450 MXN
+
+                </p>
+
+            </div>
+
+
+
+            <!-- PRODUCTO 3 -->
+            <div class="card">
+
+                <img src="img/balatas.jpg" alt="Balatas">
+
+                <h3>
+
+                    Balatas
+
+                </h3>
+
+                <p>
+
+                    Precio: $680 MXN
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- CLIENTES -->
+    <!-- ========================= -->
+
+    <section id="clientes">
+
+        <h2>
+
+            Opiniones de Clientes
+
+        </h2>
+
+
+        <div class="clientes-box">
+
+
+            <!-- CLIENTE 1 -->
+            <div class="cliente">
+
+                <img src="img/cliente1.jpg" alt="Cliente">
+
+                <p>
+
+                    Excelente atención y muy buenos precios.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- CLIENTE 2 -->
+            <div class="cliente">
+
+                <img src="img/cliente2.jpg" alt="Cliente">
+
+                <p>
+
+                    Servicio rápido y personal muy amable.
 
                 </p>
 
@@ -266,62 +331,67 @@
     </section>
 
 
+    <!-- ========================= -->
     <!-- CONTACTO -->
+    <!-- ========================= -->
+
     <section id="contacto">
 
+        <h2>
 
-        <div class="contacto-info">
+            Contacto
 
-            <h2 class="section-title">
+        </h2>
 
-                Contáctanos
+        <!-- IMAGEN DEL MAPA -->
+        <img src="img/mapa.jpg" class="mapa" alt="Mapa">
 
-            </h2>
+        <!-- INFORMACION -->
+        <p>
 
-            <p>
+            📞 Teléfono: 442 123 4567
 
-                Agenda tu servicio hoy mismo.
+        </p>
 
-            </p>
+        <p>
 
-            <p>
+            📧 Correo: autorep@gmail.com
 
-                📞 442 895 29 24
+        </p>
 
-            </p>
+        <p>
 
-            <p>
+            📍 Querétaro, México
 
-                📧 mmorales173@alumnos.uaq.mx
-
-            </p>
-
-        </div>
+        </p>
 
     </section>
 
 
+    <!-- ========================= -->
     <!-- FOOTER -->
+    <!-- ========================= -->
+
     <footer>
 
-        <!-- LOGO FOOTER -->
-        <div class="footer-logo">
+        <!-- LOGO -->
+        <img src="img/logo.png" alt="Logo">
 
-            <img src="img/logo.png">
 
-        </div>
-
+        <!-- TEXTO -->
         <p>
 
-            © 2026 AutoPro MX | Proyecto Final Desarrollo Web
+            © 2026 AutoRep - Todos los derechos reservados
 
         </p>
 
     </footer>
 
 
-    <!-- ARCHIVO JAVASCRIPT -->
+
+    <!-- CONEXION CON JAVASCRIPT -->
     <script src="js/script.js"></script>
 
 </body>
+
 </html>
