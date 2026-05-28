@@ -1,9 +1,9 @@
 /* MENSAJE EN CONSOLA */
 
-console.log("Proyecto AutoRep cargado correctamente");
+console.log("Proyecto AutoRep funcionando correctamente");
 
 
-/* EFECTO DE SCROLL */
+/* EFECTO SCROLL */
 
 window.addEventListener("scroll",()=>{
 
