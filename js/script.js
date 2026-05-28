@@ -1,12 +1,19 @@
-/* MENSAJE EN CONSOLA */
+// =================================
+// MENSAJE DE BIENVENIDA
+// =================================
 
 console.log("Proyecto AutoRep funcionando correctamente");
 
 
-/* EFECTO SCROLL */
 
-window.addEventListener("scroll",()=>{
+// =================================
+// EFECTO AL DAR CLICK EN BOTON
+// =================================
 
-    console.log("El usuario esta haciendo scroll");
+const boton=document.querySelector(".btn");
+
+boton.addEventListener("click",()=>{
+
+    alert("Bienvenido a la sección de productos");
 
 });
